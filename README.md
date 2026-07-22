@@ -58,9 +58,9 @@ TestQA/
 ### 1️⃣ Installation
 
 ```bash
-# Clone repository (when on GitHub)
-git clone https://github.com/your-username/serverest-automation.git
-cd serverest-automation
+# Clone repository
+git clone https://github.com/Bynho25/TestQA.git
+cd TestQA
 
 # Install dependencies
 npm install
@@ -232,12 +232,6 @@ npm run test:debug
 - ✅ `.gitignore` prevents accidental commits
 - ✅ Public test data (no real data)
 
-### 6. **CI/CD**
-- GitHub Actions for automation
-- Tests run on every push and pull request
-- Results report on each execution
-- Artifacts saved (screenshots, videos)
-
 ---
 
 ## 📊 Custom Commands
@@ -261,33 +255,6 @@ cy.deleteProduct(productId, token)       // Remove product
 cy.fillProductForm(productData)    // Fill product form
 cy.waitForLoader()                 // Wait for loader to disappear
 cy.verifyNotification(msg, type)  // Validate notification
-```
-
----
-
-## 🔄 CI/CD Pipeline
-
-### GitHub Actions Workflow
-
-The `.github/workflows/ci.yml` file defines:
-
-1. **Trigger**: Push to any branch, Pull Requests
-2. **Environment**: Node.js 20.x
-3. **Steps**:
-   - Code checkout
-   - Install dependencies
-   - Run all tests
-   - Upload artifacts (screenshots, videos)
-   - Results report
-
-### Run Locally
-
-```bash
-# Simulate CI (headless)
-npm run test:all
-
-# With reports
-npm run test:headed
 ```
 
 ---
@@ -324,19 +291,6 @@ Allows:
 # With verbosity
 DEBUG=cypress:* npm run test:all
 ```
-
----
-
-## 📝 Best Practices Implemented
-
-✅ **Organization**: Clean, well-structured, and scalable code  
-✅ **Maintenance**: Code reuse via commands  
-✅ **Data**: Automatic generation with Faker, no hardcoding  
-✅ **Security**: Zero credentials in repository  
-✅ **Documentation**: Comments and complete README  
-✅ **CI/CD**: Automatic pipeline  
-✅ **Quality**: Positive and negative tests  
-✅ **Traceability**: Descriptive and clear names  
 
 ---
 
