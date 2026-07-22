@@ -1,0 +1,20 @@
+{
+  "validProduct": {
+    "nome": "Laptop Premium",
+    "preco": 2500,
+    "descricao": "Laptop de alta performance para desenvolvimento",
+    "quantidade": 15
+  },
+  "budgetProduct": {
+    "nome": "Mouse Wireless",
+    "preco": 45,
+    "descricao": "Mouse sem fio com boa autonomia",
+    "quantidade": 50
+  },
+  "invalidProduct": {
+    "nome": "",
+    "preco": -100,
+    "descricao": "Produto inválido",
+    "quantidade": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "serverest-automation-suite",
+  "version": "1.0.0",
+  "description": "Test automation suite for ServerEST API and Frontend using Cypress",
+  "author": "QA Tester",
+  "license": "MIT",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:e2e": "cypress run --spec 'cypress/e2e/**/*.cy.js'",
+    "test:api": "cypress run --spec 'cypress/e2e/api/**/*.cy.js'",
+    "test:ui": "cypress run --spec 'cypress/e2e/ui/**/*.cy.js'",
+    "test:all": "cypress run",
+    "test:headed": "cypress run --headed",
+    "test:debug": "cypress run --debug"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.5.0",
+    "cypress": "^15.19.0",
+    "dotenv": "^16.4.5"
+  }
+}

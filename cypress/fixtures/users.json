@@ -1,0 +1,18 @@
+{
+  "validUser": {
+    "nome": "João Silva",
+    "email": "joao.silva@test.com",
+    "password": "Senha@123456",
+    "administrador": "false"
+  },
+  "adminUser": {
+    "nome": "Admin User",
+    "email": "admin@test.com",
+    "password": "Admin@123456",
+    "administrador": "true"
+  },
+  "invalidCredentials": {
+    "email": "invalid@test.com",
+    "password": "wrongpassword"
+  }
+}
